@@ -17,11 +17,11 @@
 
 .switchbox {
   content: "";
-  width: 36px;
+  width: 30px;
   display: block;
-  height: 16px;
+  height: 11px;
   padding: 2px 3px;
-  border-radius: 12px;
+  border-radius: 14px;
   background-color: #ffffff;
   cursor: pointer;
   caret-color: transparent;
@@ -29,17 +29,17 @@
 }
 
 .switchbox span {
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   display: block;
   border: solid 1px black;
   background-color: #253673;
-  border-radius: 8px;
+  border-radius: 14px;
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 300ms;
 }
 
 .title + input:checked + .switchbox span {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 
 .title + input:checked + .switchbox {
