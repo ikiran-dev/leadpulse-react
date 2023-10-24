@@ -6,6 +6,7 @@ import SwitchButton from "./SwitchButton";
 import Button from "./Components/Button/Button";
 import "./SwitchButton.css";
 import Arrow from "/Arrows.png";
+import darkArrow from "/darkArrows.png";
 /* import Footer from "./Components/Footer/Footer"; */
 
 function Home({ state }) {
@@ -40,17 +41,18 @@ function Home({ state }) {
         {ismenu ? (
           <div className="menu_list">
             <a href="/">
-              What We Do <img src={Arrow} alt="" />
+              What We Do <img src={isChecked ? darkArrow : Arrow} alt="" />
             </a>
             <a href="/">
               {" "}
-              Insights <img src={Arrow} alt="" />
+              Insights <img src={isChecked ? darkArrow : Arrow} alt="" />
             </a>
             <a href="/">
-              About Us <img src={Arrow} alt="" />
+              About Us <img src={isChecked ? darkArrow : Arrow} alt="" />
             </a>
             <a href="/">
-              Book a Consultation <img src={Arrow} alt="" />
+              Book a Consultation{" "}
+              <img src={isChecked ? darkArrow : Arrow} alt="" />
             </a>
           </div>
         ) : null}
