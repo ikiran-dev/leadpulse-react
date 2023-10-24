@@ -1,0 +1,16 @@
+.footer-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: hsla(267, 100%, 14%, 1);
+  background-image: radial-gradient(
+      at 73% 16%,
+      hsla(267, 100%, 14%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 79% 73%, hsla(226, 51%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 66% 51%, hsla(323, 40%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 27% 23%, hsla(354, 79%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 25% 73%, hsla(267, 100%, 14%, 1) 0px, transparent 50%),
+    radial-gradient(at 6% 93%, hsla(152, 89%, 60%, 1) 0px, transparent 50%);
+}

@@ -1,4 +1,4 @@
-a {
+.prim-but a {
   background-image: linear-gradient(
     to right,
     #f9c660 0%,
@@ -17,12 +17,12 @@ a {
   font-weight: 600;
   font-size: 20px;
 }
-a:hover {
+.prim-but a:hover {
   background-position: right center;
   color: #220049;
   text-decoration: none;
 }
-img {
+.prim-but img {
   padding-left: 10px;
   vertical-align: middle;
 }
