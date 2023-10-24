@@ -3,7 +3,7 @@ import "./Home.css";
 import logo from "/LeadPulse_Logo.png";
 import logo_light from "/LP_LIGHT.png";
 import SwitchButton from "./SwitchButton";
-import Button from "./Components/Button";
+import Button from "./Components/Button/Button";
 import "./SwitchButton.css";
 
 function Home({ state }) {

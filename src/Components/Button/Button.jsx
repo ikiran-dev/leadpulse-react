@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-import arrow from "/arrow.png";
+import arrow from "./arrow.png";
 
 function Button({ link, text }) {
   return (
