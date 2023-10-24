@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import logo from "./assets/Leadpulse_logo.png";
-import logo_light from "./assets/LP_light.png";
+import logo from "../public/LeadPulse_Logo.png";
+import logo_light from "../public/LP_LIGHT.png";
 import SwitchButton from "./SwitchButton";
 import "./SwitchButton.css";
 
