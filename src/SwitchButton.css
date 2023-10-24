@@ -1,0 +1,57 @@
+.switchbtn {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: "Public Sans";
+  color: #f7f6ed;
+  font-size: 16px;
+  padding-right: 7px;
+  font-weight: bold;
+}
+
+.switchinp {
+  display: none;
+}
+
+.switchbox {
+  content: "";
+  width: 36px;
+  display: block;
+  height: 16px;
+  padding: 2px 3px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  caret-color: transparent;
+  transition: all ease-in-out 1000ms;
+}
+
+.switchbox span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  border: solid 1px black;
+  background-color: #253673;
+  border-radius: 8px;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 300ms;
+}
+
+.title + input:checked + .switchbox span {
+  margin-left: 18px;
+}
+
+.title + input:checked + .switchbox {
+  background-color: #ffffff;
+}
+
+#light .title {
+  color: #220049;
+}
+#light .switchbox {
+  background-color: #253673;
+}
+#light .switchbox span {
+  background-color: #42f5a2;
+}

@@ -1,0 +1,11 @@
+.trial {
+  transition: all 0.5s ease;
+}
+#light .trial {
+  background-color: yellow;
+  color: black;
+}
+#dark .trial {
+  background-color: black;
+  color: white;
+}
