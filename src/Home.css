@@ -18,3 +18,38 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+.hero {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 11% 6% 245px 6%;
+}
+.hero h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 71px;
+
+  text-align: center;
+  padding-bottom: 60px;
+}
+.hero span {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: #ec5a67;
+}
+
+#dark h1 {
+  color: #f7f6ed;
+}
+
+#dark .hero span {
+  color: #ec5a67;
+}
+#light h1 {
+  color: #220049;
+}
+
+#light .hero span {
+  color: #ec5a67;
+}

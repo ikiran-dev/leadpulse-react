@@ -19,7 +19,7 @@
   content: "";
   width: 30px;
   display: block;
-  height: 11px;
+  height: 14px;
   padding: 2px 3px;
   border-radius: 14px;
   background-color: #ffffff;
@@ -39,7 +39,7 @@
 }
 
 .title + input:checked + .switchbox span {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .title + input:checked + .switchbox {
