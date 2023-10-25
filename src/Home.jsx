@@ -7,11 +7,19 @@ import Button from "./Components/Button/Button";
 import "./SwitchButton.css";
 import Arrow from "/Arrows.png";
 import darkArrow from "/darkArrows.png";
+import Passion from "/PASSION.png";
+import RedArrow from "/REDARROW.svg";
 /* import Footer from "./Components/Footer/Footer"; */
 
 function Home({ state }) {
   const [isChecked, setIsChecked] = useState(false);
   const [ismenu, setIsmenu] = useState(false);
+  const scrollHandler = (event) => {
+    let myelement = document.getElementById("scrolldiv");
+    event.preventDefault();
+    console.log(event.deltaY);
+    myelement?.scrollBy(event.deltaY < 0 ? -300 : 300, 0);
+  };
 
   useEffect(() => {
     if (isChecked) {
@@ -28,6 +36,7 @@ function Home({ state }) {
       document.body.style.overflow = "unset";
     }
   }, [ismenu]);
+
   return (
     <>
       <div className="wrapper">
@@ -64,6 +73,67 @@ function Home({ state }) {
             conversions.
           </h1>
           <Button link={"#"} text={"Learn More"} />
+        </div>
+        <div className="passion">
+          <div className="passion_col">
+            <h2>
+              This is our <span>passion</span> and where we <span>excel.</span>
+            </h2>
+            <p>
+              Crafting and implementing advanced marketing tech stacks is what
+              we do. <span>That’s all we do.</span>
+            </p>
+            <p>
+              Our sole focus is on creating bespoke integrated marketing tech
+              stacks which include marketing automation systems, websites to
+              mobile marketing applications.
+            </p>
+          </div>
+          <div
+            className="passion_col"
+            id="scrolldiv"
+            onWheel={(event) => {
+              scrollHandler(event);
+            }}
+          >
+            {" "}
+            <div className="passion_blocks">
+              <div
+                className="passion_block"
+                onScroll={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }}
+              >
+                <img src={Passion} alt="" />
+                <h3>Omni Channel Experience</h3>
+                <a href="/">
+                  Learn More <img src={RedArrow} alt="" />
+                </a>
+              </div>
+              <div className="passion_block">
+                <img src={Passion} alt="" />
+                <h3>Omni Channel Experience</h3>
+                <a href="/">
+                  Learn More <img src={RedArrow} alt="" />
+                </a>
+              </div>
+              <div className="passion_block">
+                <img src={Passion} alt="" />
+                <h3>Omni Channel Experience</h3>
+                <a href="/">
+                  Learn More <img src={RedArrow} alt="" />
+                </a>
+              </div>
+              <div className="passion_block">
+                <img src={Passion} alt="" />
+                <h3>Omni Channel Experience</h3>
+                <a href="/">
+                  Learn More <img src={RedArrow} alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

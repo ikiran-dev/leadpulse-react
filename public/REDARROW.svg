@@ -1,0 +1,11 @@
+<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="17"
+							height="17"
+							viewBox="0 0 17 17"
+							fill="none"
+						>
+							<path d="M2 15L14 3" stroke="#EC5A67" stroke-width="3" stroke-miterlimit="1.41421" />
+							<line x1="4" y1="1.5" x2="14" y2="1.5" stroke="#EC5A67" stroke-width="3" />
+							<line x1="15.5" y1="3" x2="15.5" y2="13" stroke="#EC5A67" stroke-width="3" />
+						</svg>

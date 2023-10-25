@@ -101,3 +101,124 @@
 .menu_list a:hover {
   color: #ec5a67;
 }
+.passion {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 6% 240px 6%;
+  align-items: top;
+  scroll-snap-align: center;
+}
+.passion_col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.passion_col:nth-child(1) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.passion_col:nth-child(2) {
+  width: 100%;
+  overflow-x: scroll;
+  flex-direction: row;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: absolute;
+  left: 0;
+  padding-left: 60%;
+}
+.passion_col::-webkit-scrollbar {
+  display: none;
+}
+
+.passion_col h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: normal;
+  color: #f7f6ed;
+  font-family: sans-serif;
+  padding-bottom: 45px;
+}
+.passion_col span {
+  color: #ec5a67;
+  font-family: sans-serif;
+}
+
+.passion_col p {
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #f7f6ed;
+  padding-bottom: 20px;
+}
+
+.passion_col p span {
+  font-weight: bold;
+  color: #f7f6ed;
+  font-style: italic;
+}
+
+.passion_blocks {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  background-color: #220049;
+  scroll-snap-type: y mandatory;
+}
+.passion_block {
+  padding: 0 10px;
+  background-color: #220049;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.passion_block h3 {
+  font-family: sans-serif;
+  color: #f7f6ed;
+  font-size: 40px;
+  line-height: 44px;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+.passion_block a {
+  font-family: sans-serif;
+  color: #f7f6ed;
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  text-decoration: none;
+}
+.passion_block a img {
+  height: 15px;
+  width: 15px;
+  flex-shrink: 0;
+}
+
+#light h2 {
+  color: #220049;
+}
+#light h2 span {
+  color: #ec5a67;
+}
+#light p {
+  color: #220049;
+}
+#light span {
+  color: #220049;
+}
+#light .passion_block {
+  background-color: #f7f6ed;
+}
+#light .passion_blocks {
+  background-color: #f7f6ed;
+}
+
+#light .passion_block a {
+  color: #220049;
+}
