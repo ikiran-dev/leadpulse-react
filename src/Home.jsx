@@ -16,9 +16,9 @@ function Home({ state }) {
   const [ismenu, setIsmenu] = useState(false);
   const scrollHandler = (event) => {
     let myelement = document.getElementById("scrolldiv");
-    event.preventDefault();
     console.log(event.deltaY);
     myelement?.scrollBy(event.deltaY < 0 ? -300 : 300, 0);
+    console.log(myelement?.scrollBy(event.deltaY < 0 ? -300 : 300, 0));
   };
 
   useEffect(() => {
@@ -97,14 +97,13 @@ function Home({ state }) {
             }}
           >
             {" "}
-            <div className="passion_blocks">
-              <div
-                className="passion_block"
-                onScroll={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-              >
+            <div
+              className="passion_blocks"
+              onScroll={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <div className="passion_block">
                 <img src={Passion} alt="" />
                 <h3>Omni Channel Experience</h3>
                 <a href="/">
